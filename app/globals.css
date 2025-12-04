@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-table text-white min-h-screen;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.poker-card {
+  @apply bg-felt border border-gold text-center rounded-xl shadow-lg shadow-black/40 transition-transform;
+}
+
+.poker-card:hover {
+  @apply -translate-y-1 scale-105;
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.45), 0 10px 25px rgba(0, 0, 0, 0.45);
+}
